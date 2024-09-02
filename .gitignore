@@ -1,0 +1,36 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Environment files
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+ 
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+
+
+# Optional: Ignore database files if any
+*.sqlite
+*.db
