@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const PORT = process.env.PORT || 5000;
 const connectDB = require("./utils/db");
 const contact_router= require("./router/contact-router");
 const errorMiddleware = require("./middlewares/error-middleware");
@@ -24,7 +25,7 @@ app.get('/', (req, res) => {
 app.use("/api", contact_router);
 app.use(errorMiddleware);
 
-const PORT = 5000;
+ 
 
 connectDB().then(() => {
   app.listen(PORT, () => {
