@@ -24,7 +24,6 @@ const corsOption = {
   methods: "GET, PUT, POST, DELETE, PATCH, HEAD", // Allowed HTTP methods
   credentials: true, // Allow credentials (cookies, authorization headers, etc.)
 };
-
 // Apply the CORS middleware with the specified options
 app.use(cors(corsOption));
 app.use(express.json());
