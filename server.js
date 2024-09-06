@@ -9,7 +9,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 const app = express();
 
 const corsOption = {
-  origin: "http://localhost:5173",
+  origin: "https://mansuri.netlify.app",
   methods: "GET, PUT, POST, DELETE, PATCH, HEAD",
   credentials: true,
 };
